@@ -53,6 +53,10 @@ parses_ok '2006:11:16 10:42:24-02:00', '2006-11-16 10:42:24';
 parses_ok '2009J04U04N09K49A08B', '2009-04-04 09:49:08';
 parses_ok '2009J04U04N09K49Y08', '2009-04-04 09:49:08';
 
+# Camera make  : NIKON CORPORATION
+# Camera model : NIKON D40
+parses_ok '2009:12:01 13:10:33.80Z', '2009-12-01 13:10:33';
+
 # OLYMPUS OPTICAL CO.,LTD, model "C720UZ" or "D4034"
 parses_as_unknown '0000:00:00 00:00:00';
 

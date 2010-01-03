@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Image-EXIF-DateTime-Parser
-version:            1.1
+version:            1.2
 abstract:           ~
 author:  []
 license:            unknown

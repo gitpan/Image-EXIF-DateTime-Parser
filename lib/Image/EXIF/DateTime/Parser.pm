@@ -6,7 +6,7 @@ use warnings;
 use Carp;
 use POSIX;
 use vars '$VERSION';
-$VERSION = '1.1';
+$VERSION = '1.2';
 
 =head1 NAME
 
@@ -70,7 +70,7 @@ sub parse
 {
 	my $self = shift;
 	my $string = shift;
-	if ($string =~ /^([\d\x20]{4})(.)([\d\x20]{2})(.)([\d\x20]{2})(.)([\d\x20]{2})(.)([\d\x20]{2})(.)([\d\x20]{2})([-+]\d{2}:\d{2}|.)?$/)
+	if ($string =~ /^([\d\x20]{4})(.)([\d\x20]{2})(.)([\d\x20]{2})(.)([\d\x20]{2})(.)([\d\x20]{2})(.)([\d\x20]{2})([-+]\d{2}:\d{2}|[.]\d{2}Z|.)?$/)
 	{
 		my ($y, $m, $d, $H, $M, $S) = ($1, $3, $5, $7, $9, $11);
 		my @colons = ($2, $4, $8, $10);
